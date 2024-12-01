@@ -255,7 +255,7 @@ input[type="checkbox"]:checked + .faq-question::before {
     }
 
 #Tit{
-    padding-left: 42%;
+    text-align:Center;
     font-family: "Nasa";
 
 }
