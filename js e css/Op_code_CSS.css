@@ -358,7 +358,7 @@ iframe{
     color: rgb(159, 148, 148);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     #inicio{
         margin-top:15% ;
     }
@@ -401,3 +401,41 @@ iframe{
         float:right;
         border-radius: 20%;
 }
+
+@media (max-width: 1080px) {
+    #inicio {
+        margin-top: 15%;
+    }
+
+    #carroussel1 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #carroussel1 #slide {
+        width: 100%;
+        float: none;
+    }
+
+    #carroussel1 div {
+        width: 100%;
+        padding: 2%;
+        font-size: 100%; /* Ajusta tamanho da fonte */
+    }
+
+    #seta_left,
+    #seta_right {
+        width: 8%; /* Ajusta o tamanho das setas */
+        top: 50%;
+        margin-top: 12%;
+    }
+
+    #seta_left {
+        left: -1.5%;
+    }
+
+    #seta_right {
+        right: -1.5%;
+    }
+}
+
