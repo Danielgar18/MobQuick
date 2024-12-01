@@ -182,7 +182,7 @@
   font-size: 0.9vw;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1080px) {
   #car{
     margin: 0%;
     padding: 0%;
