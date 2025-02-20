@@ -48,7 +48,9 @@ html{
 #header1 nav{
     top:3%;
     margin-top:3%;
+    visibility:visible;
 }
+
 #header1 nav ul{
     display: inline-flex;
     list-style: none;
@@ -99,6 +101,8 @@ html{
 #header2 nav{
     top:3%;
     margin-top:3%;
+    visibility:visible;
+    
 }
 #header2 nav ul{
     display: inline-flex;
@@ -139,6 +143,7 @@ html{
     border-radius: 9px;
     background-size: 20%;
     font-size: 15px;
+    margin-left: 2%;
      
 
 }
@@ -255,7 +260,7 @@ input[type="checkbox"]:checked + .faq-question::before {
     }
 
 #Tit{
-    text-align:Center;
+    padding-left: 42%;
     font-family: "Nasa";
 
 }
@@ -358,6 +363,86 @@ iframe{
     color: rgb(159, 148, 148);
 }
 
+   /* hamburg botoes */
+   #botao
+   {
+       width:0%;
+       visibility: hidden;
+   }
+
+   	
+#botao-hamburg-abre
+{
+font-size:6vw;
+cursor:pointer;
+top:0px;
+margin-top:0px;
+left:0px;
+position:absolute;
+width:2%;
+display:block;
+}
+
+#botao-hamburg-fecha
+{
+font-size:6vw;
+cursor:pointer;
+top:0px;
+margin-top:0px;
+left:4px;
+margin-left:4px;
+position:absolute;
+width:0%;
+display:none;
+}
+
+
+     /*hamburg menu vertical */
+
+     #menu-lateral {
+        visibility:hidden;
+        width:0%; /*largura inicial padrão da barra lateral, fica invisivel*/
+        height:170px;
+        position:fixed;
+        text-align:left;
+        top:0%;
+        left:0%;
+        margin-left:0%;
+        background-color:rgb(2,2,2);
+        color:rgb(255, 236, 236);
+        transition:width 0.5s;
+        padding-top:10px; /* para qualquer configuração de tela espaço superior fixo */
+      }
+
+      #menu-lateral a {
+        padding-top:8px;
+        padding-right:8px;
+        padding-bottom:8px;
+        padding-left:-3px;
+        text-decoration:none;
+        color:rgb(129,129,129);
+      }
+      
+      #menu-lateral a:hover 
+        {
+         transition-duration:0.20s;
+         transition-delay:0.2s;
+         transition-timing-function:ease;
+         transition-property:all;
+         border-radius:10px;
+         background-color:rgba(190,190,190,0.2);
+         box-shadow:2px 2px 40px 3px rgb(100,100,100);
+         color:rgb(220,20,20);
+        }
+      
+      #menu-lateral ul
+        {
+         list-style:none;
+         margin-left:-5%;
+         left:0%;
+        }
+      
+
 @media (min-width: 768px) {
     #inicio{
         margin-top:15% ;
@@ -393,16 +478,29 @@ iframe{
         right:-1.5%;
         margin-top: 12%;
     }
+
+
+
 }
 
 #Icon{
-    
-        
+           
         float:right;
         border-radius: 20%;
 }
 
 @media (max-width: 1080px) {
+    /* hamburg botoes */
+    #botao
+	{
+		width:3%;
+        visibility: visible;
+	}
+
+    #header1 nav, #header2 nav{
+        visibility:hidden;
+    }
+
     #inicio {
         margin-top: 15%;
     }
@@ -436,6 +534,8 @@ iframe{
 
     #seta_right {
         right: -1.5%;
-    }
+    }    
+
+    
 }
 

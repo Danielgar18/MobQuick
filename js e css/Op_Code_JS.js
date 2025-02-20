@@ -152,8 +152,7 @@
 			
 			else if (cont==5)
 			{ document.getElementById("titulo").innerHTML="Limpeza e Manutenção";
-				document.getElementById("descricao").innerHTML="Seu celular está aquecendo demais ou funcionando mais devagar? Oferecemos limpeza interna e manutenção preventiva para garantir o bom funcionamento do seu aparelho.";
-			}
+ 			}
 		
 			else
 			{ document.getElementById("titulo").innerHTML="Instalação de Software e Recuperação de Dados";
@@ -168,3 +167,4 @@
 			exibir=setInterval("mostra()",3000);
 		}
 
+	
